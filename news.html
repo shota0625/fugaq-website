@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お知らせ - フガク株式会社</title>
+    <meta name="description" content="フガク株式会社からの最新ニュース、サービス更新情報、実績報告などのお知らせをご覧いただけます。">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- スクロールインジケーター -->
+    <div class="scroll-indicator">
+        <div class="scroll-progress"></div>
+    </div>
+
+    <!-- ヘッダー（共通） -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <div class="logo-icon">🗾</div>
+                    <div class="logo-text">
+                        <h1><a href="index.html">フガク株式会社</a></h1>
+                        <p class="logo-en">FUGAQ Inc.</p>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html"><i class="fas fa-home"></i> HOME</a></li>
+                    <li><a href="company.html"><i class="fas fa-building"></i> 会社情報</a></li>
+                    <li><a href="services.html"><i class="fas fa-cogs"></i> サービス</a></li>
+                    <li><a href="results.html"><i class="fas fa-chart-line"></i> 実績・事例</a></li>
+                    <li><a href="news.html" class="active"><i class="fas fa-newspaper"></i> お知らせ</a></li>
+                    <li><a href="ir.html"><i class="fas fa-file-contract"></i> IR情報</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> お問い合わせ</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- ページヘッダー -->
+        <section class="page-header">
+            <div class="container">
+                <h1><i class="fas fa-newspaper"></i> お知らせ</h1>
+                <p class="page-subtitle">News</p>
+                <p class="header-description">
+                    最新のニュースやサービス情報を<br>
+                    随時更新してお届けします
+                </p>
+            </div>
+        </section>
+
+        <!-- ニュース一覧 -->
+        <section class="news-section">
+            <div class="container">
+                <div class="news-layout">
+                    <div class="news-content">
+                        <!-- メインニュース記事 -->
+                        <article class="news-article featured">
+                            <div class="article-header">
+                                <time datetime="2025-04-01" class="news-date">
+                                    <i class="fas fa-calendar-alt"></i> 2025.04.01
+                                </time>
+                                <div class="news-category company">
+                                    <i class="fas fa-building"></i> 会社情報
+                                </div>
+                            </div>
+                            <h2 class="news-title">フガク株式会社を設立いたしました</h2>
+                            
+                            <div class="news-summary">
+                                <p>
+                                    この度、フガク株式会社を設立いたしました。代表取締役西津翔太のもと、
+                                    日本の優れたサービスや製品を海外に展開することを目的とした、
+                                    デジタルマーケティング支援事業を開始いたします。
+                                </p>
+                                <p>
+                                    社名「フガク」は葛飾北斎の「富嶽三十六景」からインスピレーションを得ており、
+                                    北斎の作品が海外の画家に影響を与えたように、
+                                    日本から世界を豊かにしていくという理念を込めています。
+                                </p>
+                            </div>
+
+                            <div class="news-details">
+                                <div class="detail-section">
+                                    <h3><i class="fas fa-info-circle"></i> 設立概要</h3>
+                                    <div class="info-grid">
+                                        <div class="info-item">
+                                            <div class="info-label"><i class="fas fa-tag"></i> 商号</div>
+                                            <div class="info-value">フガク株式会社（英語表記：FUGAQ Inc.）</div>
+                                        </div>
+                                        <div class="info-item">
+                                            <div class="info-label"><i class="fas fa-user-tie"></i> 代表取締役</div>
+                                            <div class="info-value">西津翔太</div>
+                                        </div>
+                                        <div class="info-item">
+                                            <div class="info-label"><i class="fas fa-calendar-alt"></i> 設立日</div>
+                                            <div class="info-value">令和7年4月1日（2025年4月1日）</div>
+                                        </div>
+                                        <div class="info-item">
+                                            <div class="info-label"><i class="fas fa-yen-sign"></i> 資本金</div>
+                                            <div class="info-value">300万円</div>
+                                        </div>
+                                        <div class="info-item">
+                                            <div class="info-label"><i class="fas fa-map-marker-alt"></i> 所在地</div>
+                                            <div class="info-value">東京都渋谷区恵比寿1-20-2-405</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="detail-section">
+                                    <h3><i class="fas fa-briefcase"></i> 主な事業内容</h3>
+                                    <div class="services-list">
+                                        <div class="service-item">
+                                            <i class="fas fa-users"></i>
+                                            <span>海外向けインフルエンサーマネジメント事業</span>
+                                        </div>
+                                        <div class="service-item">
+                                            <i class="fab fa-instagram"></i>
+                                            <span>海外・インバウンドSNSマーケティング支援</span>
+                                        </div>
+                                        <div class="service-item">
+                                            <i class="fas fa-laptop-code"></i>
+                                            <span>海外・インバウンド向けウェブサイト・LP制作</span>
+                                        </div>
+                                        <div class="service-item">
+                                            <i class="fas fa-chart-bar"></i>
+                                            <span>マーケティングリサーチ・コンサルティング</span>
+                                        </div>
+                                        <div class="service-item">
+                                            <i class="fas fa-video"></i>
+                                            <span>コンテンツ制作・広告運用</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="detail-section">
+                                    <h3><i class="fas fa-handshake"></i> 協業パートナー</h3>
+                                    <div class="partner-info">
+                                        <div class="partner-details">
+                                            <h4>TAKASHii from Japan</h4>
+                                            <p>
+                                                YouTubeチャンネル「TAKASHii from Japan」との協業により、
+                                                400万人以上の海外ユーザーにリーチできるネットワークを活用し、
+                                                お客様の海外展開を効果的に支援してまいります。
+                                            </p>
+                                        </div>
+                                        <div class="partner-stats">
+                                            <div class="stat-item">
+                                                <i class="fab fa-youtube"></i>
+                                                <span>250万人</span>
+                                                <small>YouTube登録者</small>
+                                            </div>
+                                            <div class="stat-item">
+                                                <i class="fab fa-instagram"></i>
+                                                <span>85万人</span>
+                                                <small>Instagramフォロワー</small>
+                                            </div>
+                                            <div class="stat-item">
+                                                <i class="fab fa-tiktok"></i>
+                                                <span>100万人</span>
+                                                <small>TikTokフォロワー</small>
+                                            </div>
+                                            <div class="stat-item">
+                                                <i class="fab fa-facebook"></i>
+                                                <span>10万人</span>
+                                                <small>Facebookフォロワー</small>
+                                            </div>
+                                        </div>
+                                        <div class="partner-links">
+                                            <a href="https://www.youtube.com/@takashiifromjapan" target="_blank" class="partner-link youtube">
+                                                <i class="fab fa-youtube"></i> YouTube
+                                            </a>
+                                            <a href="https://www.instagram.com/takashiifromjapan/" target="_blank" class="partner-link instagram">
+                                                <i class="fab fa-instagram"></i> Instagram
+                                            </a>
+                                            <a href="https://www.tiktok.com/@takashiifromjapan" target="_blank" class="partner-link tiktok">
+                                                <i class="fab fa-tiktok"></i> TikTok
+                                            </a>
+                                            <a href="https://www.facebook.com/takashiifromjpn/" target="_blank" class="partner-link facebook">
+                                                <i class="fab fa-facebook"></i> Facebook
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="detail-section">
+                                    <h3><i class="fas fa-quote-left"></i> 代表メッセージ</h3>
+                                    <blockquote class="ceo-message">
+                                        <p>
+                                            アメリカでの留学経験を通じて、日本の製品やサービスが
+                                            海外でどれほど高く評価されているかを実感しました。
+                                            フガク株式会社の設立により、より多くの日本企業様の
+                                            グローバル展開を支援し、日本から世界を豊かにする
+                                            事業を創造していきたいと考えています。
+                                        </p>
+                                        <cite>
+                                            <div class="cite-info">
+                                                <i class="fas fa-user-tie"></i>
+                                                <span>代表取締役 西津翔太</span>
+                                            </div>
+                                        </cite>
+                                    </blockquote>
+                                </div>
+                                
+                                <div class="detail-section">
+                                    <h3><i class="fas fa-road"></i> 今後の展開</h3>
+                                    <div class="future-plans">
+                                        <div class="plan-item">
+                                            <i class="fas fa-network-wired"></i>
+                                            <div>
+                                                <h4>パートナーシップ強化</h4>
+                                                <p>協業パートナーとの連携をさらに強化し、ネットワークを拡大</p>
+                                            </div>
+                                        </div>
+                                        <div class="plan-item">
+                                            <i class="fas fa-plus-circle"></i>
+                                            <div>
+                                                <h4>サービス拡充</h4>
+                                                <p>海外向けマーケティング支援サービスの拡充を図る</p>
+                                            </div>
+                                        </div>
+                                        <div class="plan-item">
+                                            <i class="fas fa-chart-line"></i>
+                                            <div>
+                                                <h4>実績公開</h4>
+                                                <p>新たなサービス展開や実績について随時お知らせ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="article-footer">
+                                <div class="share-buttons">
+                                    <span class="share-label"><i class="fas fa-share-alt"></i> シェア</span>
+                                    <a href="#" class="share-btn twitter">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="share-btn facebook">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                    <a href="#" class="share-btn linkedin">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 今後のお知らせ予定 -->
+                        <section class="upcoming-news">
+                            <h3><i class="fas fa-calendar-plus"></i> 今後のお知らせ予定</h3>
+                            <div class="upcoming-list">
+                                <div class="upcoming-item">
+                                    <div class="upcoming-icon service"><i class="fas fa-cogs"></i></div>
+                                    <div class="upcoming-content">
+                                        <div class="upcoming-category">サービス情報</div>
+                                        <h4>新サービス詳細のご案内</h4>
+                                        <p>追加サービスや機能拡張についてお知らせ予定</p>
+                                    </div>
+                                </div>
+                                <div class="upcoming-item">
+                                    <div class="upcoming-icon results"><i class="fas fa-chart-line"></i></div>
+                                    <div class="upcoming-content">
+                                        <div class="upcoming-category">実績報告</div>
+                                        <h4>クライアント支援成果の公開</h4>
+                                        <p>具体的な成功事例と数値実績の報告</p>
+                                    </div>
+                                </div>
+                                <div class="upcoming-item">
+                                    <div class="upcoming-icon event"><i class="fas fa-calendar-check"></i></div>
+                                    <div class="upcoming-content">
+                                        <div class="upcoming-category">イベント情報</div>
+                                        <h4>セミナー・ウェビナー開催のお知らせ</h4>
+                                        <p>海外マーケティングに関する情報発信イベント</p>
+                                    </div>
+                                </div>
+                                <div class="upcoming-item">
+                                    <div class="upcoming-icon media"><i class="fas fa-newspaper"></i></div>
+                                    <div class="upcoming-content">
+                                        <div class="upcoming-category">メディア掲載</div>
+                                        <h4>各種メディア掲載のご報告</h4>
+                                        <p>業界メディアでの紹介記事や取材記事の報告</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- サイドバー -->
+                    <aside class="news-sidebar">
+                        <div class="sidebar-section">
+                            <h3><i class="fas fa-filter"></i> カテゴリー</h3>
+                            <ul class="category-list">
+                                <li><a href="#" class="category-link active" data-category="all">
+                                    <i class="fas fa-list"></i> すべて <span class="count">1</span>
+                                </a></li>
+                                <li><a href="#" class="category-link" data-category="company">
+                                    <i class="fas fa-building"></i> 会社情報 <span class="count">1</span>
+                                </a></li>
+                                <li><a href="#" class="category-link" data-category="service">
+                                    <i class="fas fa-cogs"></i> サービス情報 <span class="count">0</span>
+                                </a></li>
+                                <li><a href="#" class="category-link" data-category="results">
+                                    <i class="fas fa-chart-line"></i> 実績報告 <span class="count">0</span>
+                                </a></li>
+                                <li><a href="#" class="category-link" data-category="event">
+                                    <i class="fas fa-calendar-check"></i> イベント情報 <span class="count">0</span>
+                                </a></li>
+                                <li><a href="#" class="category-link" data-category="media">
+                                    <i class="fas fa-newspaper"></i> メディア掲載 <span class="count">0</span>
+                                </a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sidebar-section">
+                            <h3><i class="fas fa-trophy"></i> 最新の実績</h3>
+                            <div class="achievement-highlight">
+                                <div class="achievement-item">
+                                    <div class="achievement-icon"><i class="fas fa-users"></i></div>
+                                    <div class="achievement-content">
+                                        <h4>協業パートナー実績</h4>
+                                        <p>400万人以上の海外ユーザーリーチを実現</p>
+                                    </div>
+                                </div>
+                                <div class="achievement-stats">
+                                    <div class="stat">
+                                        <i class="fab fa-youtube"></i>
+                                        <span>250万</span>
+                                        <small>YouTube</small>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fab fa-instagram"></i>
+                                        <span>85万</span>
+                                        <small>Instagram</small>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fab fa-tiktok"></i>
+                                        <span>100万</span>
+                                        <small>TikTok</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-section">
+                            <h3><i class="fas fa-envelope"></i> お知らせ購読</h3>
+                            <div class="newsletter-signup">
+                                <p>最新のお知らせを受け取るには、お問い合わせフォームからご連絡ください。</p>
+                                <a href="contact.html" class="btn btn-outline">
+                                    <i class="fas fa-envelope"></i> お問い合わせ
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-section">
+                            <h3><i class="fas fa-link"></i> 関連リンク</h3>
+                            <ul class="related-links">
+                                <li><a href="company.html">
+                                    <i class="fas fa-building"></i> 会社情報
+                                </a></li>
+                                <li><a href="services.html">
+                                    <i class="fas fa-cogs"></i> サービス一覧
+                                </a></li>
+                                <li><a href="results.html">
+                                    <i class="fas fa-chart-line"></i> 実績・事例
+                                </a></li>
+                                <li><a href="ir.html">
+                                    <i class="fas fa-file-contract"></i> IR情報
+                                </a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター（共通） -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <div class="logo-icon">🗾</div>
+                        <div>
+                            <h3>フガク株式会社</h3>
+                            <p class="footer-en">FUGAQ Inc.</p>
+                        </div>
+                    </div>
+                    <address>
+                        <i class="fas fa-map-marker-alt"></i>
+                        〒150-0013<br>
+                        東京都渋谷区恵比寿1-20-2-405
+                    </address>
+                    <div class="footer-social">
+                        <h4>協業パートナー</h4>
+                        <div class="social-links">
+                            <a href="https://www.youtube.com/@takashiifromjapan" target="_blank" class="social-link youtube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://www.instagram.com/takashiifromjapan/" target="_blank" class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@takashiifromjapan" target="_blank" class="social-link tiktok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://www.facebook.com/takashiifromjpn/" target="_blank" class="social-link facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <nav class="footer-nav">
+                    <div class="nav-column">
+                        <h4>企業情報</h4>
+                        <ul>
+                            <li><a href="company.html"><i class="fas fa-building"></i> 会社情報</a></li>
+                            <li><a href="news.html"><i class="fas fa-newspaper"></i> お知らせ</a></li>
+                            <li><a href="ir.html"><i class="fas fa-file-contract"></i> IR情報</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-column">
+                        <h4>サービス</h4>
+                        <ul>
+                            <li><a href="services.html"><i class="fas fa-cogs"></i> サービス一覧</a></li>
+                            <li><a href="results.html"><i class="fas fa-chart-line"></i> 実績・事例</a></li>
+                            <li><a href="contact.html"><i class="fas fa-envelope"></i> お問い合わせ</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FUGAQ Inc. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="ir/announcement/">電子公告</a>
+                    <a href="#">プライバシーポリシー</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "fugaq-website",
+  "version": "1.0.0",
+  "description": "フガク株式会社 公式ウェブサイト",
+  "scripts": {
+    "build": "echo 'No build process required'",
+    "dev": "npx serve .",
+    "deploy": "echo 'Deploy to Cloudflare Pages'"
+  },
+  "keywords": [
+    "digital-marketing",
+    "global-expansion",
+    "sns-marketing",
+    "influencer-management"
+  ],
+  "author": "FUGAQ Inc.",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "serve": "^14.0.0"
+  }
+}

@@ -1,0 +1,6 @@
+# Netlify/Cloudflare Pages リダイレクト設定
+/ir/announcement https://fugaq.com/ir/announcement/ 301
+/electronic-announcement https://fugaq.com/ir/announcement/ 301
+
+# SPAフォールバック（必要に応じて）
+/*    /index.html   200

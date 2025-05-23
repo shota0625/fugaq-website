@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - フガク株式会社</title>
+    <meta name="description" content="フガク株式会社へのお問い合わせフォーム。海外展開、SNSマーケティング、ウェブサイト制作に関するご相談を承ります。">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- スクロールインジケーター -->
+    <div class="scroll-indicator">
+        <div class="scroll-progress"></div>
+    </div>
+
+    <!-- ヘッダー（共通） -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <div class="logo-icon">🗾</div>
+                    <div class="logo-text">
+                        <h1><a href="index.html">フガク株式会社</a></h1>
+                        <p class="logo-en">FUGAQ Inc.</p>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html"><i class="fas fa-home"></i> HOME</a></li>
+                    <li><a href="company.html"><i class="fas fa-building"></i> 会社情報</a></li>
+                    <li><a href="services.html"><i class="fas fa-cogs"></i> サービス</a></li>
+                    <li><a href="results.html"><i class="fas fa-chart-line"></i> 実績・事例</a></li>
+                    <li><a href="news.html"><i class="fas fa-newspaper"></i> お知らせ</a></li>
+                    <li><a href="ir.html"><i class="fas fa-file-contract"></i> IR情報</a></li>
+                    <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> お問い合わせ</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- ページヘッダー -->
+        <section class="page-header">
+            <div class="container">
+                <h1><i class="fas fa-envelope"></i> お問い合わせ</h1>
+                <p class="page-subtitle">Contact Us</p>
+                <p class="header-description">
+                    海外展開に関するご相談やサービスについて<br>
+                    お気軽にお問い合わせください
+                </p>
+            </div>
+        </section>
+
+        <!-- お問い合わせフォーム -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="form-content">
+                        <div class="form-intro">
+                            <h2><i class="fas fa-comments"></i> お問い合わせフォーム</h2>
+                            <p>
+                                海外展開やインバウンド集客に関するご質問、サービスについてのご相談など、
+                                どのようなことでもお気軽にお問い合わせください。
+                                専門スタッフが丁寧にご対応いたします。
+                            </p>
+                        </div>
+
+                        <form class="contact-form" id="contactForm" method="POST" action="#" novalidate>
+                            <div class="form-group">
+                                <label for="inquiryType" class="form-label">
+                                    <i class="fas fa-list"></i> お問い合わせ種別 <span class="required">*</span>
+                                </label>
+                                <select id="inquiryType" name="inquiryType" class="form-select" required>
+                                    <option value="">選択してください</option>
+                                    <option value="service">サービスに関するお問い合わせ</option>
+                                    <option value="overseas">海外展開に関するご相談</option>
+                                    <option value="sns">SNSマーケティングに関するご相談</option>
+                                    <option value="website">ウェブサイト制作に関するご相談</option>
+                                    <option value="research">マーケティングリサーチに関するご相談</option>
+                                    <option value="partnership">協業・パートナーシップに関するお問い合わせ</option>
+                                    <option value="ir">IR・投資家向け情報に関するお問い合わせ</option>
+                                    <option value="media">メディア・取材に関するお問い合わせ</option>
+                                    <option value="other">その他</option>
+                                </select>
+                                <div class="error-message" id="inquiryTypeError"></div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="companyName" class="form-label">
+                                        <i class="fas fa-building"></i> 会社名・団体名 <span class="required">*</span>
+                                    </label>
+                                    <input type="text" id="companyName" name="companyName" class="form-input" required>
+                                    <div class="error-message" id="companyNameError"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="department" class="form-label">
+                                        <i class="fas fa-users"></i> 部署名
+                                    </label>
+                                    <input type="text" id="department" name="department" class="form-input">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="lastName" class="form-label">
+                                        <i class="fas fa-user"></i> お名前（姓） <span class="required">*</span>
+                                    </label>
+                                    <input type="text" id="lastName" name="lastName" class="form-input" required>
+                                    <div class="error-message" id="lastNameError"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="firstName" class="form-label">
+                                        <i class="fas fa-user"></i> お名前（名） <span class="required">*</span>
+                                    </label>
+                                    <input type="text" id="firstName" name="firstName" class="form-input" required>
+                                    <div class="error-message" id="firstNameError"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">
+                                        <i class="fas fa-envelope"></i> メールアドレス <span class="required">*</span>
+                                    </label>
+                                    <input type="email" id="email" name="email" class="form-input" required>
+                                    <div class="error-message" id="emailError"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">
+                                        <i class="fas fa-phone"></i> 電話番号
+                                    </label>
+                                    <input type="tel" id="phone" name="phone" class="form-input">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="website" class="form-label">
+                                    <i class="fas fa-globe"></i> ウェブサイトURL
+                                </label>
+                                <input type="url" id="website" name="website" class="form-input" placeholder="https://">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="businessType" class="form-label">
+                                    <i class="fas fa-industry"></i> 業種
+                                </label>
+                                <select id="businessType" name="businessType" class="form-select">
+                                    <option value="">選択してください</option>
+                                    <option value="tourism">観光・宿泊・飲食業</option>
+                                    <option value="manufacturing">製造業・メーカー</option>
+                                    <option value="retail">小売・EC事業</option>
+                                    <option value="service">サービス業</option>
+                                    <option value="entertainment">エンターテインメント・文化関連</option>
+                                    <option value="healthcare">医療・ヘルスケア</option>
+                                    <option value="education">教育・研修</option>
+                                    <option value="finance">金融・保険</option>
+                                    <option value="it">IT・テクノロジー</option>
+                                    <option value="consulting">コンサルティング</option>
+                                    <option value="other">その他</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="companySize" class="form-label">
+                                    <i class="fas fa-chart-bar"></i> 会社規模
+                                </label>
+                                <select id="companySize" name="companySize" class="form-select">
+                                    <option value="">選択してください</option>
+                                    <option value="startup">スタートアップ（1-10名）</option>
+                                    <option value="small">小企業（11-50名）</option>
+                                    <option value="medium">中企業（51-300名）</option>
+                                    <option value="large">大企業（301名以上）</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget" class="form-label">
+                                    <i class="fas fa-yen-sign"></i> 想定予算（月額）
+                                </label>
+                                <select id="budget" name="budget" class="form-select">
+                                    <option value="">選択してください</option>
+                                    <option value="under-100k">10万円未満</option>
+                                    <option value="100k-300k">10万円〜30万円</option>
+                                    <option value="300k-500k">30万円〜50万円</option>
+                                    <option value="500k-1m">50万円〜100万円</option>
+                                    <option value="over-1m">100万円以上</option>
+                                    <option value="discuss">要相談</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="timeline" class="form-label">
+                                    <i class="fas fa-clock"></i> 希望開始時期
+                                </label>
+                                <select id="timeline" name="timeline" class="form-select">
+                                    <option value="">選択してください</option>
+                                    <option value="asap">できるだけ早く</option>
+                                    <option value="1month">1ヶ月以内</option>
+                                    <option value="3months">3ヶ月以内</option>
+                                    <option value="6months">6ヶ月以内</option>
+                                    <option value="undecided">未定</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label">
+                                    <i class="fas fa-tag"></i> 件名 <span class="required">*</span>
+                                </label>
+                                <input type="text" id="subject" name="subject" class="form-input" required>
+                                <div class="error-message" id="subjectError"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">
+                                    <i class="fas fa-comment"></i> お問い合わせ内容 <span class="required">*</span>
+                                </label>
+                                <textarea id="message" name="message" class="form-textarea" rows="6" required placeholder="具体的なご要望、現在の課題、目標などをお聞かせください。"></textarea>
+                                <div class="error-message" id="messageError"></div>
+                                <div class="character-count">
+                                    <span id="messageCount">0</span> / 1000文字
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-checkbox">
+                                    <input type="checkbox" id="privacy" name="privacy" required>
+                                    <span class="checkmark"></span>
+                                    <span class="checkbox-text">
+                                        <a href="#" target="_blank">プライバシーポリシー</a>に同意します <span class="required">*</span>
+                                    </span>
+                                </label>
+                                <div class="error-message" id="privacyError"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-checkbox">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    <span class="checkbox-text">
+                                        今後のお知らせやマーケティング情報の受け取りを希望します
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="form-submit">
+                                <button type="submit" class="btn btn-primary btn-large" id="submitBtn">
+                                    <i class="fas fa-paper-plane"></i> お問い合わせを送信
+                                </button>
+                                <p class="submit-note">
+                                    <i class="fas fa-info-circle"></i>
+                                    送信いただいた内容を確認後、2営業日以内にご返信いたします。
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- 会社情報 -->
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <h3><i class="fas fa-building"></i> 会社情報</h3>
+                            <div class="info-item">
+                                <i class="fas fa-tag"></i>
+                                <div>
+                                    <strong>会社名</strong>
+                                    <span>フガク株式会社</span>
+                                    <small>FUGAQ Inc.</small>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>所在地</strong>
+                                    <span>〒150-0013<br>東京都渋谷区恵比寿1-20-2-405</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>営業時間</strong>
+                                    <span>平日 9:00 - 18:00</span>
+                                    <small>土日祝日は休業</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <h3><i class="fas fa-train"></i> アクセス</h3>
+                            <div class="access-item">
+                                <i class="fas fa-circle jr-line"></i>
+                                <div>
+                                    <strong>JR山手線・埼京線</strong>
+                                    <span>恵比寿駅 東口より徒歩5分</span>
+                                </div>
+                            </div>
+                            <div class="access-item">
+                                <i class="fas fa-circle metro-line"></i>
+                                <div>
+                                    <strong>東京メトロ日比谷線</strong>
+                                    <span>恵比寿駅 1番出口より徒歩3分</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <h3><i class="fas fa-handshake"></i> 協業パートナー</h3>
+                            <div class="partner-info">
+                                <h4>TAKASHii from Japan</h4>
+                                <p>400万人以上の海外ユーザーにリーチ</p>
+                                <div class="partner-links">
+                                    <a href="https://www.youtube.com/@takashiifromjapan" target="_blank" class="partner-link youtube">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/takashiifromjapan/" target="_blank" class="partner-link instagram">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.tiktok.com/@takashiifromjapan" target="_blank" class="partner-link tiktok">
+                                        <i class="fab fa-tiktok"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/takashiifromjpn/" target="_blank" class="partner-link facebook">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <h3><i class="fas fa-question-circle"></i> よくあるご質問</h3>
+                            <div class="faq-item">
+                                <strong>Q. 相談は無料ですか？</strong>
+                                <p>A. 初回相談は無料で承っております。</p>
+                            </div>
+                            <div class="faq-item">
+                                <strong>Q. どの程度の期間で効果が出ますか？</strong>
+                                <p>A. サービス内容により異なりますが、通常3-6ヶ月で効果を実感いただけます。</p>
+                            </div>
+                            <div class="faq-item">
+                                <strong>Q. 小規模企業でも対応可能ですか？</strong>
+                                <p>A. 企業規模に関わらず、最適なプランをご提案いたします。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター（共通） -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <div class="logo-icon">🗾</div>
+                        <div>
+                            <h3>フガク株式会社</h3>
+                            <p class="footer-en">FUGAQ Inc.</p>
+                        </div>
+                    </div>
+                    <address>
+                        <i class="fas fa-map-marker-alt"></i>
+                        〒150-0013<br>
+                        東京都渋谷区恵比寿1-20-2-405
+                    </address>
+                    <div class="footer-social">
+                        <h4>協業パートナー</h4>
+                        <div class="social-links">
+                            <a href="https://www.youtube.com/@takashiifromjapan" target="_blank" class="social-link youtube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://www.instagram.com/takashiifromjapan/" target="_blank" class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@takashiifromjapan" target="_blank" class="social-link tiktok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://www.facebook.com/takashiifromjpn/" target="_blank" class="social-link facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <nav class="footer-nav">
+                    <div class="nav-column">
+                        <h4>企業情報</h4>
+                        <ul>
+                            <li><a href="company.html"><i class="fas fa-building"></i> 会社情報</a></li>
+                            <li><a href="news.html"><i class="fas fa-newspaper"></i> お知らせ</a></li>
+                            <li><a href="ir.html"><i class="fas fa-file-contract"></i> IR情報</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-column">
+                        <h4>サービス</h4>
+                        <ul>
+                            <li><a href="services.html"><i class="fas fa-cogs"></i> サービス一覧</a></li>
+                            <li><a href="results.html"><i class="fas fa-chart-line"></i> 実績・事例</a></li>
+                            <li><a href="contact.html"><i class="fas fa-envelope"></i> お問い合わせ</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FUGAQ Inc. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="ir/announcement/">電子公告</a>
+                    <a href="#">プライバシーポリシー</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
